@@ -1,0 +1,11 @@
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'crusoexia/vim-monokai'
+Plug 'altercation/vim-colors-solarized'
+Plug 'lilydjwg/colorizer'
+Plug 'scrooloose/nerdtree'
+Plug 'majutsushi/tagbar'
+Plug 'sirver/ultisnips'
+Plug 'honza/vim-snippets'
+call plug#end()
