@@ -5,7 +5,6 @@ Plug 'crusoexia/vim-monokai'
 Plug 'altercation/vim-colors-solarized'
 Plug 'lilydjwg/colorizer'
 Plug 'scrooloose/nerdtree'
-Plug 'majutsushi/tagbar'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 call plug#end()

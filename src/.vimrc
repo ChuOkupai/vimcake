@@ -10,8 +10,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'lilydjwg/colorizer'
 "Tree explorer
 Plug 'scrooloose/nerdtree'
-"Displays tags in a window
-Plug 'majutsushi/tagbar'
 "Snippets
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
@@ -28,7 +26,6 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-n> :NERDTreeToggle<CR>
-nmap <F8> :TagbarToggle<CR>
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
