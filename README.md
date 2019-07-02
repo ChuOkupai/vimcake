@@ -22,7 +22,9 @@ If you don't have configured vim, this package is safe to use (in other words, y
 - vim-snippets
 
 # Show the files explorer:
-Press _\<Ctrl\>+\<n\>_ inside vim to open/close NERDTree
+Press _\<Ctrl\>+\<n\>_ inside vim to open/close NERDTree.
+
+NERDTree is open by default if you start vim while loading a directory.
 
 # Autocompletion:
 Use Tabs! For example, if you type in a c file:
@@ -58,3 +60,6 @@ It works with:
 - main -> main _\<Tab\>_ (with arguments) or mainn _\<Tab\>_ (without arguments)
 
 ... and more!
+
+# User Interface
+_monokai_ is the current theme used (custom) and airline-theme is set as _dark_
