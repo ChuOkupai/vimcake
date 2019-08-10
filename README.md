@@ -6,7 +6,7 @@ Use the following command in a terminal:
 ```shell
 make install
 ```
-It will erase your current vim config (.vim & .vimrc).
+It will erase your current vim config (.vim and .vimrc).
 
 If you don't have configured vim, this package is safe to use (in other words, you don't have a .vimrc).
 
@@ -20,6 +20,7 @@ If you don't have configured vim, this package is safe to use (in other words, y
 - nerdtree
 - ultisnips
 - vim-snippets
+- vim-42header 
 
 # Show the files explorer:
 Press _\<Ctrl\>+\<n\>_ inside vim to open/close NERDTree.
@@ -60,6 +61,11 @@ It works with:
 - main -> main _\<Tab\>_ (with arguments) or mainn _\<Tab\>_ (without arguments)
 
 ... and more!
+
+# 42 Header
+42 Header can be added to your files by pressing _\<f2\>_.
+
+Username and mail can be edited in your ~/.vimrc (Section \<Plugins config\>).
 
 # User Interface
 _monokai_ is the current theme used (custom) and airline-theme is set as _dark_
