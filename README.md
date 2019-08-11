@@ -63,7 +63,7 @@ It works with:
 ... and more!
 
 # 42 Header
-42 Header can be added to your files by pressing _\<f2\>_.
+42 Header can be added to your files by pressing _\<F2\>_.
 
 Username and mail can be edited in your ~/.vimrc (Section \<Plugins config\>).
 

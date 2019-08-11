@@ -12,10 +12,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 map <C-n> :NERDTreeToggle<CR>
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-"let g:hdr42user=""
-"let g:hdr42mail=""
-nmap <f2> <Esc>:Stdheader<CR>
+let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+"let g:hdr42user="marvin"
+"let g:hdr42mail="marvin@student.42.fr"
+nmap <F2> <Esc>:Stdheader<CR>
 
 "<User Interface>
 set background=dark
@@ -32,8 +32,10 @@ set list "Enable lists
 set listchars=tab:\>\- "Show tabs
 set foldmethod=syntax "Fold based on indention levels
 set foldcolumn=1 "Enable mouse to open and close folds
-set foldlevel=6 "Set fold depth
+set nofoldenable "Open files without closed folds
 set confirm "Display a confirmation dialog when closing an unsaved file
+"Toggle fold/unfold all folds
+noremap <F3> :call FoldToggle()<CR>
 
 "<Indent>
 filetype indent on "Enable indentation rules that are file-type specific
@@ -43,13 +45,11 @@ set shiftwidth=4 "When shifting, indent using four spaces
 set autoindent "New lines inherit the indentation of previous lines
 set smarttab "Insert “tabstop” number of spaces with the “tab” key
 set smartindent "Do smart autoindenting when starting a new line
-set noendofline
-set nofixendofline "Remove new line at the end of file
-inoremap ( ()<Esc>i
-inoremap [ []<Esc>i
-inoremap { {}<Esc>i
-inoremap ' ''<Esc>i
-inoremap " ""<Esc>i
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+inoremap ' ''<Left>
+inoremap " ""<Left>
 
 "<Search>
 set hlsearch "Search highlighting
@@ -62,3 +62,14 @@ set dir=~/.cache/vim "Directory to store swap files
 set history=256
 set tabpagemax=32 "Maximum number of files that can be opened with vim -p
 set lazyredraw "Don’t update screen during macro and script execution
+
+let $fold=1
+function FoldToggle()
+	if $fold==0
+		:exe "normal zR"
+		let $fold=1
+	else
+		:exe "normal zM"
+		let $fold=0
+	endif
+endfunction

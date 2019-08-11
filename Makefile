@@ -1,3 +1,5 @@
+PLUGGED := ~/.vim/plugged
+
 all:
 	@echo 'Type make install to install vimcake.'
 	@echo 'If you want to keep your current vim config, save your files first!'
@@ -6,12 +8,13 @@ all:
 
 install:
 	mkdir -p ~/.cache/vim ~/.vim
-	cp src/install.vim ~/.vimrc
+	cp src/plugins-list.vim ~/.vimrc
 	cp -r src/autoload ~/.vim
 	vim -c 'PlugUpgrade | PlugInstall | qa'
-	sed -i '' '161d' ~/.vim/plugged/vim-42header/after/plugin/42header.vim 
 	cat src/*.vim > ~/.vimrc
-	cp -r src/plugged ~/.vim
+	cp -r src/vim-* $(PLUGGED)
+	patch $(PLUGGED)/vim-42header/after/plugin/42header.vim src/42header.diff
+	patch $(PLUGGED)/vim-monokai/colors/monokai.vim src/monokai.diff
 	@echo 'vimcake package installed.'
 
 clean:

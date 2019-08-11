@@ -1,0 +1,4 @@
+130c130
+< call s:h("SpecialKey",    { "fg": s:pink })
+---
+> call s:h("SpecialKey",    { "fg": s:darkgrey })
