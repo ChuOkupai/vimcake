@@ -62,6 +62,10 @@ It works with:
 
 ... and more!
 
+# Folding
+
+Press _\<F3\>_ to fold/unfold your code
+
 # 42 Header
 42 Header can be added to your files by pressing _\<F2\>_.
 
