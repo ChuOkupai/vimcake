@@ -2,9 +2,6 @@
 "<Plugins config>
 filetype plugin on
 let g:airline_theme='dark'
-let g:solarized_termcolors = 256
-let g:solarized_contrast   = "high"
-let g:solarized_visibility = "low"
 let g:colorizer_maxlines = 512
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
@@ -13,12 +10,11 @@ map <C-n> :NERDTreeToggle<CR>
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<C-z>"
-"let g:hdr42user="marvin"
-"let g:hdr42mail="marvin@student.42.fr"
 nmap <F2> <Esc>:Stdheader<CR>
+let g:hdr42user="#H42USER"
+let g:hdr42mail="#H42MAIL"
 
 "<User Interface>
-set background=dark
 syntax on " Enable syntax processing
 color monokai " Change color scheme
 match ErrorMsg '\%>80v.\+'
@@ -59,8 +55,8 @@ set smartcase "Automatically switch search to case-sensitive when search query c
 "<Miscellaneous>
 set backupdir=~/.cache/vim "Directory to store backup files
 set dir=~/.cache/vim "Directory to store swap files
-set history=256
-set tabpagemax=32 "Maximum number of files that can be opened with vim -p
+set history=256 "Stack size
+set tabpagemax=64 "Maximum number of files that can be opened with vim -p
 set lazyredraw "Don’t update screen during macro and script execution
 
 let $fold=1

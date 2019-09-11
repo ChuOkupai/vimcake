@@ -5,8 +5,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 "Color schemes
 Plug 'crusoexia/vim-monokai'
-Plug 'altercation/vim-colors-solarized'
-"Colorize all text in the form #rgb, #rgba, #rrggbb, #rrgbbaa, rgb(...), rgba(...)
+"Colorize all text in the form #rgb, #rgba, rgb(...), rgba(...), ...
 Plug 'lilydjwg/colorizer'
 "Tree explorer
 Plug 'scrooloose/nerdtree'

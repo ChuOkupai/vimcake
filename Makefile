@@ -1,4 +1,6 @@
-PLUGGED := ~/.vim/plugged
+PLUGGED	:= ~/.vim/plugged
+UMAIL	?= $(USER)
+DOMAIN	?= student.42.fr
 
 all:
 	@echo 'Type make install to install vimcake.'
@@ -15,6 +17,8 @@ install:
 	cp -r src/vim-* $(PLUGGED)
 	patch $(PLUGGED)/vim-42header/after/plugin/42header.vim src/42header.diff
 	patch $(PLUGGED)/vim-monokai/colors/monokai.vim src/monokai.diff
+	sed -i 's/#H42USER/$(USER)/' ~/.vimrc
+	sed -i 's/#H42MAIL/$(UMAIL)@$(DOMAIN)/' ~/.vimrc
 	@echo 'vimcake package installed.'
 
 clean:
