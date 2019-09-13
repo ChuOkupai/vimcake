@@ -4,15 +4,16 @@ A simple vim configuration package for beginners!
 **Ideal** for 42 school students, but not only!
 
 ## Plugins list:
-- vim-plug
-- vim-airline
-- vim-airline-themes
-- vim-monokai
 - colorizer
 - nerdtree
 - ultisnips
-- vim-snippets
 - vim-42header 
+- vim-airline
+- vim-airline-themes
+- vim-dcrpc
+- vim-monokai
+- vim-plug
+- vim-snippets
 
 ## How to install
 Use the following command in a terminal:
@@ -32,10 +33,23 @@ Or removed with:
 make clean
 ```
 
-## File explorer:
-Press _**Ctrl**_+_**n**_ inside vim to open/close NERDTree.
+## 42 Header
+42 Header can be added to your files by pressing _**F2**_.
 
-NERDTree is shown by default if you start vim with a directory as argument.
+Username and mail can be edited in your ~/.vimrc (Section \<Plugins config\>).
+
+Another simple solution is to use arguments with make by using variables during installation:
+```shell
+make install USER="username" UMAIL="user" DOMAIN="domain"
+# Set header username to "username" and email address to "user@domain"
+make install USER="username"
+# Set header username to "username" and email address to "username@student.42.fr"
+make install UMAIL="user"
+# Set header username to $USER and email address to "user@student.42.fr"
+```
+_UMAIL_ variable takes _$USER_ content by default
+
+_DOMAIN_ variable is set to "student.42.fr" by default
 
 ## Autocompletion:
 Crush your damn _**Tab**_ key! For example, if you type in a C file:
@@ -79,29 +93,16 @@ Colorizer allows detection of text that contains a RGB or RGBa color by coloring
 
 See the [documentation](https://github.com/lilydjwg/colorizer/blob/master/README.mkd "Colorizer's documentation") for more details.
 
+## File explorer:
+Press _**Ctrl**_+_**n**_ inside vim to open/close NERDTree.
+
+NERDTree is shown by default if you start vim with a directory as argument.
+
 ## Folding
 
 Press _**F3**_ to fold/unfold your code.
 
 Very handy with huge files!
-
-## 42 Header
-42 Header can be added to your files by pressing _**F2**_.
-
-Username and mail can be edited in your ~/.vimrc (Section \<Plugins config\>).
-
-Another simple solution is to use arguments with make by using variables during installation:
-```shell
-make install USER="username" UMAIL="user" DOMAIN="domain"
-# Set header username to "username" and email address to "user@domain"
-make install USER="username"
-# Set header username to "username" and email address to "username@student.42.fr"
-make install UMAIL="user"
-# Set header username to $USER and email address to "user@student.42.fr"
-```
-_UMAIL_ variable takes _$USER_ content by default
-
-_DOMAIN_ variable is set to "student.42.fr" by default
 
 ## User Interface
 monokai, which has been slightly modified, is the current colorscheme used and airline-theme is set to dark.

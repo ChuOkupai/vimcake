@@ -1,5 +1,8 @@
+"vimcake version: 0.1
 "<Plugins>
 call plug#begin('~/.vim/plugged') "Using vim-plug (plugin manager)
+"Discord's soviet spy
+Plug 'Akulen/vim-dcrpc'
 "Better status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
