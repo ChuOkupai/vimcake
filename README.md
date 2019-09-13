@@ -1,5 +1,7 @@
 # :cake: vimcake :cake:
-A simple vim configuration package for beginners, preconfigured (but not only) for 42 school students!
+A simple vim configuration package for beginners!
+
+**Ideal** for 42 school students, but not only!
 
 ## Plugins list:
 - vim-plug
@@ -31,44 +33,44 @@ make clean
 ```
 
 ## File explorer:
-Press _\<Ctrl\>+\<n\>_ inside vim to open/close NERDTree.
+Press _**Ctrl**_+_**n**_ inside vim to open/close NERDTree.
 
 NERDTree is shown by default if you start vim with a directory as argument.
 
 ## Autocompletion:
-Crush your damn _\<Tab\>_ key! For example, if you type in a C file:
+Crush your damn _**Tab**_ key! For example, if you type in a C file:
 ```c
-if
+if|
 ```
-And then you press _\<Tab\>_, it'll load a snippet and move your cursor in the condition field:
+And then you press _**Tab**_, it'll load a snippet and move your cursor in the condition field:
 ```c
-if ()
+if (|)
 {
   
 }
 ```
 Now you can add a condition:
 ```c
-if (1 && 0)
+if (1 && 0|)
 {
   
 }
 ```
-Press _\<Tab\>_ again to move your cursor to the next field (inside brackets in this case):
+Press _**Tab**_ again to move your cursor to the next field (inside brackets in this case):
 ```c
 if (1 && 0)
 {
-  // your cursor will be moved here like magic
+  |
 }
 ```
 It works with:
-- if -> if _\<Tab\>_
-- else -> else _\<Tab\>_
-- while -> while _\<Tab\>_
+- if -> if _**Tab**_
+- else -> else _**Tab**
+- while -> while _**Tab**_
 
 and especially for C/C++ files:
-- include -> inc _\<Tab\>_
-- main -> main _\<Tab\>_ (with arguments) or mainn _\<Tab\>_ (without arguments)
+- include -> inc _**Tab**_
+- main -> main _**Tab**_ (with arguments) or mainn _**Tab**_ (without arguments)
 
 ... and more!
 
@@ -79,12 +81,12 @@ See the [documentation](https://github.com/lilydjwg/colorizer/blob/master/README
 
 ## Folding
 
-Press _\<F3\>_ to fold/unfold your code.
+Press _**F3**_ to fold/unfold your code.
 
 Very handy with huge files!
 
 ## 42 Header
-42 Header can be added to your files by pressing _\<F2\>_.
+42 Header can be added to your files by pressing _**F2**_.
 
 Username and mail can be edited in your ~/.vimrc (Section \<Plugins config\>).
 
@@ -103,4 +105,5 @@ _DOMAIN_ variable is set to "student.42.fr" by default
 
 ## User Interface
 monokai, which has been slightly modified, is the current colorscheme used and airline-theme is set to dark.
+
 Some adjustments have been made in the vim configuration file to make vim more pleasant and convenient to use!
