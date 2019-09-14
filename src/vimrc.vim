@@ -1,7 +1,6 @@
 
 "<Plugins config>
 filetype plugin on
-let g:dcrpc_autostart = 1
 let g:airline_theme='dark'
 let g:colorizer_maxlines = 512
 autocmd StdinReadPre * let s:std_in=1

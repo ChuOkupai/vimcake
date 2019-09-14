@@ -18,8 +18,8 @@ install:
 	cp -r src/vim-* $(PLUGGED)
 	patch $(PLUGGED)/vim-42header/after/plugin/42header.vim src/42header.diff
 	patch $(PLUGGED)/vim-monokai/colors/monokai.vim src/monokai.diff
-	sed -i -e 's/#H42USER/$(USER)/' $(RC)
-	sed -i -e 's/#H42MAIL/$(UMAIL)@$(DOMAIN)/' $(RC)
+	sed -i '' -e 's/#H42USER/$(USER)/' $(RC)
+	sed -i '' -e 's/#H42MAIL/$(UMAIL)@$(DOMAIN)/' $(RC)
 	@echo 'vimcake package installed.'
 
 clean:

@@ -10,7 +10,6 @@ A simple vim configuration package for beginners!
 - vim-42header 
 - vim-airline
 - vim-airline-themes
-- vim-dcrpc
 - vim-monokai
 - vim-plug
 - vim-snippets
