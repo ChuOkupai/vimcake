@@ -15,19 +15,19 @@ A simple vim configuration package for beginners!
 - vim-snippets
 
 ## How to install
+- :floppy_disk: - If you want to keep your current vim configuration, backup your files first!
+
 Use the following command in a terminal:
 ```shell
 make install
 ```
-It will potentially erase your current vim config (.vim folder and .vimrc file), backup your files first!
+- :warning: - Make sure you don't already have a vim configuration before installation
 
-If you don't have configured vim, this package is safe to use, in other words you don't have a .vimrc.
-
-The package can be reinstalled with...
+Or use this one to delete any vim configuration before install:
 ```shell
 make re
 ```
-Or removed with:
+The package can be removed with:
 ```shell
 make clean
 ```
@@ -78,7 +78,7 @@ if (1 && 0)
 ```
 It works with:
 - if -> if _**Tab**_
-- else -> else _**Tab**
+- else -> else _**Tab**_
 - while -> while _**Tab**_
 
 and especially for C/C++ files:
