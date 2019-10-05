@@ -1,18 +1,19 @@
-# :cake: vimcake :cake:
+# :cake: VimCake :cake:
 A simple vim configuration package for beginners!
 
 **Ideal** for 42 school students, but not only!
 
 ## Plugins list:
-- colorizer
-- nerdtree
-- ultisnips
-- vim-42header 
+- vim-42header
 - vim-airline
-- vim-airline-themes
 - vim-monokai
 - vim-plug
 - vim-snippets
+- AutoClose
+- Colorizer
+- NERDTree
+- Syntastic
+- UltiSnips
 
 ## How to install
 - :floppy_disk: - If you want to keep your current vim configuration, backup your files first!
@@ -98,7 +99,6 @@ Press _**Ctrl**_+_**n**_ inside vim to open/close NERDTree.
 NERDTree is shown by default if you start vim with a directory as argument.
 
 ## Folding
-
 Press _**F3**_ to fold/unfold your code.
 
 Very handy with huge files!
@@ -107,3 +107,8 @@ Very handy with huge files!
 monokai, which has been slightly modified, is the current colorscheme used and airline-theme is set to dark.
 
 Some adjustments have been made in the vim configuration file to make vim more pleasant and convenient to use!
+
+## Version
+Current version is 0.2.0
+
+Changelog can be seen [here](CHANGELOG.md)

@@ -10,14 +10,13 @@ map <C-n> :NERDTreeToggle<CR>
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<C-z>"
-nmap <F2> <Esc>:Stdheader<CR>
+nmap <F2> :Stdheader<CR>
 let g:hdr42user="#H42USER"
 let g:hdr42mail="#H42MAIL"
 
 "<User Interface>
 syntax on " Enable syntax processing
 color monokai " Change color scheme
-match ErrorMsg '\%>80v.\+'
 set mouse=a "Enable mouse
 set number "Show line numbers
 set showcmd "Show the last command in bottom bar
@@ -41,11 +40,6 @@ set shiftwidth=4 "When shifting, indent using four spaces
 set autoindent "New lines inherit the indentation of previous lines
 set smarttab "Insert “tabstop” number of spaces with the “tab” key
 set smartindent "Do smart autoindenting when starting a new line
-inoremap ( ()<Left>
-inoremap [ []<Left>
-inoremap { {}<Left>
-inoremap ' ''<Left>
-inoremap " ""<Left>
 
 "<Search>
 set hlsearch "Search highlighting
@@ -68,4 +62,4 @@ function FoldToggle()
 		:exe "normal zM"
 		let $fold=0
 	endif
-endfunction
+endf
