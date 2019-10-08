@@ -9,7 +9,6 @@ A simple vim configuration package for beginners!
 - vim-monokai
 - vim-plug
 - vim-snippets
-- AutoClose
 - Colorizer
 - NERDTree
 - Syntastic
@@ -109,6 +108,6 @@ monokai, which has been slightly modified, is the current colorscheme used and a
 Some adjustments have been made in the vim configuration file to make vim more pleasant and convenient to use!
 
 ## Version
-Current version is 0.2.0
+Current version is 0.2.1-pre
 
 Changelog can be seen [here](CHANGELOG.md)

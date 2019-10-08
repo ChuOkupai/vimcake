@@ -40,6 +40,11 @@ set shiftwidth=4 "When shifting, indent using four spaces
 set autoindent "New lines inherit the indentation of previous lines
 set smarttab "Insert “tabstop” number of spaces with the “tab” key
 set smartindent "Do smart autoindenting when starting a new line
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+inoremap ' ''<Left>
+inoremap " ""<Left>
 
 "<Search>
 set hlsearch "Search highlighting

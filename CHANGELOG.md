@@ -1,10 +1,14 @@
 # Changelog
 All notable changes to vimcake will be listed here.
 
+## [0.2.1] - 2019-10-08
+### Removed
+- AutoClose because mine is better
+
 ## [0.2.0] - 2019-10-05
 ### Added
 - AutoClose plugin added
--  VimCake now handles syntax checking with Syntastic
+- VimCake now handles syntax checking with Syntastic
 
 ### Changed
 - AutoClose replaces old  key mappings to automatically insert closing braces

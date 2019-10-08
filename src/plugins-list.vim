@@ -7,5 +7,4 @@ Plug 'pbondoer/vim-42header'
 Plug 'vim-airline/vim-airline'
 Plug 'crusoexia/vim-monokai'
 Plug 'honza/vim-snippets'
-Plug 'vim-scripts/AutoClose'
 call plug#end()
