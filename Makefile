@@ -18,7 +18,6 @@ install:
 	vim -c 'PlugUpgrade | PlugInstall | qa'
 	cat src/vimrc.vim >> $(RC)
 	cp -r src/vim-* $(PLUGGED)
-	patch -i src/42header.diff $(PLUGGED)/vim-42header/after/plugin/42header.vim
 	patch -i src/monokai.diff $(PLUGGED)/vim-monokai/colors/monokai.vim
 	sed -i -e 's/#H42USER/$(USER)/' $(RC)
 	sed -i -e 's/#H42MAIL/$(UMAIL)@$(DOMAIN)/' $(RC)
